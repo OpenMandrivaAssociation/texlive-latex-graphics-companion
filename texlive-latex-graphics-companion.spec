@@ -1,3 +1,9 @@
+# revision 15878
+# category Package
+# catalog-ctan /info/examples/lgc
+# catalog-date 2006-03-09 14:57:21 +0100
+# catalog-license lppl
+# catalog-version undef
 Name:		texlive-latex-graphics-companion
 Version:	20060309
 Release:	1
@@ -455,6 +461,7 @@ necessary supporting files.
 %doc %{_texmfdistdir}/doc/latex/latex-graphics-companion/years.men
 %doc %{_texmfdistdir}/doc/latex/latex-graphics-companion/years.wom
 %doc %{_texmfdistdir}/doc/latex/latex-graphics-companion/yearw.dat
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -465,3 +472,5 @@ necessary supporting files.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
