@@ -16,8 +16,6 @@ Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/latex-graphics-co
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
-Conflicts:	texlive-texmf <= 20110705-3
-Conflicts:	texlive-doc <= 20110705-3
 
 %description
 The source of the examples printed in the book, together with
@@ -461,7 +459,6 @@ necessary supporting files.
 %doc %{_texmfdistdir}/doc/latex/latex-graphics-companion/years.men
 %doc %{_texmfdistdir}/doc/latex/latex-graphics-companion/years.wom
 %doc %{_texmfdistdir}/doc/latex/latex-graphics-companion/yearw.dat
-%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -472,5 +469,3 @@ necessary supporting files.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
-mkdir -p %{buildroot}%{_tlpkgobjdir}
-cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
