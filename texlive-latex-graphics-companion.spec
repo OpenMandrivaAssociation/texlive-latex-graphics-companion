@@ -1,12 +1,12 @@
-# revision 27530
+# revision 15878
 # category Package
 # catalog-ctan /info/examples/lgc
-# catalog-date 2012-05-22 11:10:15 +0200
+# catalog-date 2006-03-09 14:57:21 +0100
 # catalog-license lppl
 # catalog-version undef
 Name:		texlive-latex-graphics-companion
-Version:	20120522
-Release:	1
+Version:	20060309
+Release:	2
 Summary:	Examples from The LaTeX Graphics Companion
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/info/examples/lgc
@@ -431,7 +431,7 @@ necessary supporting files.
 %doc %{_texmfdistdir}/doc/latex/latex-graphics-companion/bar.ini
 %doc %{_texmfdistdir}/doc/latex/latex-graphics-companion/chap.dat
 %doc %{_texmfdistdir}/doc/latex/latex-graphics-companion/clef.ini
-%doc %{_texmfdistdir}/doc/latex/latex-graphics-companion/config.ps
+%doc %{_texmfdistdir}/doc/latex/latex-graphics-companion/config.ps.gz
 %doc %{_texmfdistdir}/doc/latex/latex-graphics-companion/decade.dat
 %doc %{_texmfdistdir}/doc/latex/latex-graphics-companion/feature.ini
 %doc %{_texmfdistdir}/doc/latex/latex-graphics-companion/graves.dat
@@ -450,7 +450,6 @@ necessary supporting files.
 %doc %{_texmfdistdir}/doc/latex/latex-graphics-companion/pot.dat
 %doc %{_texmfdistdir}/doc/latex/latex-graphics-companion/script.ini
 %doc %{_texmfdistdir}/doc/latex/latex-graphics-companion/scriptcc.ini
-%doc %{_texmfdistdir}/doc/latex/latex-graphics-companion/showgrid.tex
 %doc %{_texmfdistdir}/doc/latex/latex-graphics-companion/stones.dat
 %doc %{_texmfdistdir}/doc/latex/latex-graphics-companion/students.dat
 %doc %{_texmfdistdir}/doc/latex/latex-graphics-companion/veracx.mx1
@@ -470,3 +469,17 @@ necessary supporting files.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 20060309-2
++ Revision: 753181
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20060309-1
++ Revision: 718822
+- texlive-latex-graphics-companion
+- texlive-latex-graphics-companion
+- texlive-latex-graphics-companion
+- texlive-latex-graphics-companion
+
