@@ -5,8 +5,8 @@
 # catalog-license lppl
 # catalog-version undef
 Name:		texlive-latex-graphics-companion
-Version:	20120522
-Release:	9
+Version:	20170414
+Release:	1
 Summary:	Examples from The LaTeX Graphics Companion
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/info/examples/lgc
