@@ -1,18 +1,12 @@
-# revision 29235
-# category Package
-# catalog-ctan /info/examples/lgc
-# catalog-date 2012-05-22 11:10:15 +0200
-# catalog-license lppl
-# catalog-version undef
 Name:		texlive-latex-graphics-companion
-Version:	20190228
+Version:	29235
 Release:	1
 Summary:	Examples from The LaTeX Graphics Companion
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/info/examples/lgc
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/latex-graphics-companion.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/latex-graphics-companion.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/latex-graphics-companion.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/latex-graphics-companion.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -463,7 +457,7 @@ necessary supporting files.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
