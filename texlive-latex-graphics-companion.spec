@@ -1,6 +1,6 @@
 Name:		texlive-latex-graphics-companion
 Version:	29235
-Release:	1
+Release:	2
 Summary:	Examples from The LaTeX Graphics Companion
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/info/examples/lgc
