@@ -3,7 +3,7 @@ Version:	29235
 Release:	2
 Summary:	Examples from The LaTeX Graphics Companion
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/info/examples/lgc
+URL:		https://www.ctan.org/tex-archive/info/examples/lgc
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/latex-graphics-companion.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/latex-graphics-companion.doc.r%{version}.tar.xz
